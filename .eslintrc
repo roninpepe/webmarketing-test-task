@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["import", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "global-require": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".css", ".scss"]
+      }
+    }
+  }
+}
