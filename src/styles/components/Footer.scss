@@ -1,0 +1,14 @@
+@import '$';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  &__ {
+    &copyright {
+      @include f-desc;
+      text-align: center;
+      font-weight: $regular;
+      padding: 9px 0;
+    }
+  }
+}

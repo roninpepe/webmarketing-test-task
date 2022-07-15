@@ -1,0 +1,59 @@
+$c-primary: #000;
+$c-primary-alt: #333;
+$c-secondary: #4f4f4f;
+$c-tertiary: #8d8d8d;
+$c-tertiary-alt: #828282;
+$c-bright: #fff;
+$c-accents-1: #2f8ded;
+$c-accents-2: #56ccf2;
+$c-accents-3: #9b51e0;
+
+$bg-primary: #d9d9d9;
+$bg-secondary: #fff;
+$bg-tertiary: #c4c4c4;
+$bg-accents: #56ccf2;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+@mixin f-h1 {
+  font-size: 1.375rem;
+  font-weight: $bold;
+}
+@mixin f-h3 {
+  font-size: 1.125rem;
+  font-weight: $bold;
+}
+@mixin f-h4 {
+  font-size: 1rem;
+  font-weight: $medium;
+}
+@mixin f-desc {
+  font-size: 0.875rem;
+  font-weight: $light;
+  color: $c-tertiary-alt;
+}
+
+@mixin interactive-box {
+  transition: box-shadow 0.1s;
+
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+$screen-l: 800px;
+$screen-s: 600px;
+
+@mixin l {
+  @media screen and (max-width: $screen-l) {
+    @content;
+  }
+}
+@mixin s {
+  @media screen and (max-width: $screen-s) {
+    @content;
+  }
+}

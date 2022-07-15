@@ -1,0 +1,10 @@
+@import 'Main/_';
+
+.main {
+  &__ {
+    &header {
+      margin: 5px 0 25px;
+      color: $c-primary-alt;
+    }
+  }
+}
