@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{> components/head title=page_meta.title meta_keywords=page_meta.meta_keywords meta_description=page_meta.meta_description}}
+  {{> components/Head page_meta}}
   <body>
     <div class="app">
-      {{> components/header}}
+      {{> components/Header}}
+      {{> components/Main}}
+      {{> components/Footer}}
     </div>
     <script src="./index.js"></script>
   </body>
